@@ -1,20 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: jenkinsscript-app
+
 spec:
   replicas: 2
+
   selector:
     matchLabels:
       app: jenkinsscript-app
+
   template:
     metadata:
       labels:
         app: jenkinsscript-app
+
     spec:
       containers:
       - name: jenkinsscript-app
         image: naveenthammisetty/jenkinsscript-app:latest
         imagePullPolicy: Always
+
         ports:
-        - containerPort: 8080
+        - containerPort: 9090
