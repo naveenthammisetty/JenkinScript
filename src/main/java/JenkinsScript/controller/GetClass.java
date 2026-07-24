@@ -9,6 +9,6 @@ public class GetClass {
 	  @GetMapping("/Fetch")
 	  public String getMessge()
 	  {
-		  return "Data Fetched Successfully!!!!";
+		  return "Data Fetched Successfully!!!!!";
 	  }
 }
